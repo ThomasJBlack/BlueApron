@@ -1,0 +1,562 @@
+body {
+  display: flex;
+  /* self */
+  margin: 0;
+
+  /* children */
+  flex-direction: column;
+
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+
+  font-size: 14px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman",
+    "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular",
+    "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  letter-spacing: 0.04cm;
+}
+
+.header-container {
+  display: flex;
+  background: #0f346c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 5;
+  background-color: white;
+}
+.header-spacer {
+  height: 70px;
+  z-index: 0;
+}
+
+header {
+  display: flex;
+  position: relative;
+  /* self */
+  margin: 0;
+
+  height: 70px;
+  width: 1200px;
+  box-sizing: border-box;
+
+  /* children */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* testing */
+  background-color: white;
+}
+
+header .left {
+  display: flex;
+  height: 70px;
+  /* self */
+  /* height: 70px; */
+
+  /* children */
+  align-items: center;
+  justify-content: space-between;
+  /* test */
+  background-color: white;
+  color: rgb(141, 140, 140);
+}
+header a {
+  padding: 16px;
+}
+
+header .left img {
+  width: 100px;
+}
+header .left a:hover {
+  color: rgb(15, 15, 131);
+}
+
+header .right {
+  display: flex;
+  /* self */
+  height: 45px;
+  /* children */
+  align-items: center;
+  justify-items: space-between;
+
+  /* test */
+}
+a {
+  padding: 4px;
+  cursor: pointer;
+}
+
+/* Addvertisment */
+.addvertisment {
+  display: flex;
+  /* self */
+  margin: 0;
+
+  height: 55px;
+  width: 100vw;
+  box-sizing: border-box;
+
+  /* children */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  /* testing */
+  background-color: #0f346c;
+}
+
+.exit a {
+  width: 25px;
+  display: flex;
+  height: 25px;
+  position: absolute;
+  right: 20px;
+  top: 81px;
+}
+
+.redeem-button {
+  font-size: 11px;
+  font-weight: 500;
+  background-color: #f26226;
+  color: white;
+  border-radius: 4px;
+  /* width: 150px; */
+  padding: 10px 25px;
+  margin-left: 20px;
+  text-align: center;
+  align-content: center;
+}
+
+.dark {
+  z-index: 3;
+}
+.light {
+  z-index: 4;
+}
+
+.light:hover {
+  display: none;
+}
+
+/* main */
+main {
+  display: flex;
+  /* self */
+  max-width: 1200px;
+  /* margin: ; */
+
+  /* children */
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+video {
+  display: flex;
+  box-sizing: border-box;
+  width: 100vw;
+  position: relative;
+}
+
+.video > .video-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: white;
+}
+
+.delicious-recipes {
+  width: 550px;
+  text-align: center;
+  font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue",
+    "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman",
+    "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.video-button {
+  background-color: #f26226;
+  color: white;
+  font-size: 16px;
+
+  padding: 20px 45px;
+  border: none;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+/* three images/buttons */
+
+.three-image-section {
+  display: flex;
+  flex-direction: column;
+  /* padding: 50px 50px 50px 50px; */
+  padding: 150px;
+  font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue",
+    "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman",
+    "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+.tripple {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.odd div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 175px;
+}
+.even div {
+  display: flex;
+  flex-direction: column;
+  padding-right: 175px;
+}
+.tripple div h2 {
+  margin: 0;
+}
+
+.cook-create-enjoy img {
+  min-width: 325px;
+}
+
+.three-image-section p {
+  color: rgb(70, 69, 69);
+}
+
+/* meal kit section */
+
+.meal-kit {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.meal-kit-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center top;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 50px 175px;
+  padding: 0 75px;
+  background-color: white;
+}
+
+.meal-kit-overlay h2 {
+  padding: 35px 0 0 0;
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+}
+
+.four-icons-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.top-two,
+.bottom-two {
+  display: flex;
+  flex-direction: row;
+}
+
+.four-icons-text div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px;
+}
+
+.four-icons-text div div p {
+  color: rgb(87, 86, 86);
+  text-align: center;
+}
+.four-icons-text div div h3 {
+  text-align: center;
+}
+
+.book .icon {
+  width: 38px;
+}
+.avocados .icon {
+  width: 48px;
+}
+.cup .icon {
+  width: 55px;
+}
+.recycle .icon {
+  width: 48px;
+}
+
+/* per serving section */
+
+.per-serving {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+  align-items: center;
+}
+.per-serving h2 {
+  font-weight: 600;
+  font-size: 26px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.per-serving h3 {
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 20px;
+  color: rgb(102, 101, 101);
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  box-sizing: border-box;
+  justify-items: center;
+}
+
+.upper-container {
+  display: flex;
+  width: 100vw;
+  background-color: #fbfbfb;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.upper {
+  display: flex;
+  max-width: 1200px;
+  flex-direction: row;
+  justify-items: center;
+  padding-left: 15vw;
+  margin-right: 15vw;
+  letter-spacing: 0.05cm;
+  font-size: 12px;
+  font-weight: 600;
+}
+.upper h2 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.upper h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.upper .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px;
+}
+.upper .center {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 20px 0;
+  border-left: solid lightgray 0.5px;
+  border-right: solid lightgray 0.5px;
+}
+
+.upper .right {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.upper .right div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+  flex-direction: row;
+  width: 300px;
+}
+
+.upper div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.upper div div div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.lower-container {
+  display: flex;
+  background: #0f346c;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.lower {
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-bottom: 10px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background: #0f346c;
+  line-height: 2.5;
+}
+
+footer .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.underlined:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none; /* removes dots */
+}
+
+.underlined:hover {
+  text-decoration: underline;
+}
+
+.lower-screen-reader a,
+.lower .underlined {
+  color: #c0c0c0;
+}
+
+/* more specific rules on images */
+#chef-roy-image {
+  height: 75px;
+}
+
+.three-image-section div img {
+  height: 320px;
+}
+
+.per-serving img {
+  width: 225px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.social-media a img {
+  width: 60px;
+}
+
+.vegetables {
+  width: 1200px;
+  min-height: 920px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 900px;
+}
+
+.right a > img {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.lower-screen-reader a {
+  padding-bottom: 0;
+}
+
+.dark-blue-button {
+  background-color: #5a79a8;
+  color: white;
+}
+
+.offer-text {
+  color: white;
+  font-weight: 500;
+}
+
+.choose-your-plan {
+  background-color: #2157a8;
+  padding: 20px 50px;
+  max-width: 187px;
+  border-radius: 40px;
+  color: white;
+  font-size: 600;
+  font-size: 16px;
+}
+.choose-your-plan:hover {
+  background-color: #11305f;
+}
+
+input {
+  padding: 10px 45px;
+}
+.search-bar {
+  background-color: #2157a8;
+  /* padding: 6px; */
+  border-radius: 4px;
+}
+.search-bar a {
+  padding: 0 15px;
+  color: white;
+}
+
+.white {
+  color: white;
+}
